@@ -86,4 +86,11 @@ public class ExecutionTest {
         pointcut.setExpression("execution(* *(*))");//파라미터 하나 *
         assertThat(pointcut.matches(method, MemberServiceImpl.class)).isTrue();
     }
+
+    @Test//within과 다른점은 부모 클래스로 지정하지못함.
+    //excution는 타입 기반임 인터페이스가능.
+    void withinMatch() {
+        pointcut.setExpression("within(hello.aop.member.MemberService)");
+        assertThat(pointcut.matches(method, MemberServiceImpl.class)).isFalse();
+    }
 }
