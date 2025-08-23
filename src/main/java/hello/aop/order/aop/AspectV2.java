@@ -12,7 +12,8 @@ public class AspectV2 {
 
     //hello.aop.order 패키지와 하위 패키지
     @Pointcut("execution(* hello.aop.order..*(..))")
-    private void allOrder() {}//pointcut signature
+    private void allOrder() {
+    }//pointcut signature
 
     @Around("allOrder()")
     public Object doLog(ProceedingJoinPoint joinPoint) throws Throwable {
