@@ -18,7 +18,7 @@ public class CallServiceV2 {
 
     /**
      *Spring에서 ObjectProvider<T> 는 조금 더 유연하게 빈을 주입할 수 있도록 도와주는 지연 의존성 조회(Dependency Lookup) 도구
-     *
+     *프록시 빈을 부입받는거라 수정자가 아닌 생성자 주입.
      */
     private final ObjectProvider<CallServiceV2> callServiceProvider;
 
