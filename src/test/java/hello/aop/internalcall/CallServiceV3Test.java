@@ -13,10 +13,10 @@ import org.springframework.context.annotation.Import;
 class CallServiceV3Test {
 
     @Autowired
-    CallServiceV2 callServiceV2;
+    CallServiceV3 callServiceV3;
 
     @Test
     void external() {
-        callServiceV2.external();
+        callServiceV3.external();
     }
 }
