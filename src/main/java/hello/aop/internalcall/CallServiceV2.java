@@ -25,6 +25,7 @@ public class CallServiceV2 {
     public CallServiceV2(ObjectProvider<CallServiceV2> callServiceProvider) {
         this.callServiceProvider = callServiceProvider;
     }
+    연습
 
     public void external() {
         log.info("call external");
